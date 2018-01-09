@@ -1,0 +1,6 @@
+function readnetwork(filename)
+    f = fopen(filename,'r');
+    magic_cookie_int = fread(f,1,'uint32','b');
+    fprintf('%d', magic_cookie_int);
+    magic_cookie_real = fread(f,4,'uint32','b')
+end
