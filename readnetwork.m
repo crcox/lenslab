@@ -1,4 +1,4 @@
-function readnetwork(filename)
+function weights = readnetwork(filename)
     f = fopen(filename,'r');
     magic_cookie_int = fread(f,1,'uint32','b');
     fprintf('Magic Cookie: %d\n', magic_cookie_int);
